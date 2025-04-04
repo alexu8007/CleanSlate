@@ -1,0 +1,55 @@
+###########################
+# CleanSlate Configuration #
+###########################
+
+# Data cleaning configuration
+cleaning:
+  # Whether to remove outliers during automatic cleaning
+  remove_outliers: true
+  
+  # Whether to fill missing values during automatic cleaning
+  fill_missing_values: true
+  
+  # Whether to standardize column names during automatic cleaning
+  standardize_columns: true
+  
+  # Whether to drop duplicate rows during automatic cleaning
+  drop_duplicate_rows: true
+  
+  # Maximum percentage of outliers to remove (0.0-1.0)
+  max_outlier_percentage: 0.05
+  
+  # Strategy for filling missing values
+  # Options: auto, mean, median, mode, constant, knn, regression
+  missing_value_strategy: auto
+
+# Pipeline configuration
+pipeline:
+  # Whether to automatically save pipelines
+  auto_save: true
+  
+  # Whether to use version control for datasets
+  version_control: true
+  
+  # Maximum number of pipeline steps
+  max_pipeline_steps: 20
+  
+  # Whether to execute pipeline steps in parallel when possible
+  parallel_execution: true
+  
+  # Maximum time (in seconds) a pipeline can run before timing out
+  pipeline_timeout_seconds: 3600
+
+# UI configuration
+ui:
+  # UI theme (light or dark)
+  theme: light
+  
+  # Whether to show advanced options in the UI
+  show_advanced_options: false
+  
+  # Maximum number of rows to preview in the UI
+  max_rows_preview: 100
+  
+  # Whether to enable real-time updates in the UI
+  enable_realtime_updates: true 
